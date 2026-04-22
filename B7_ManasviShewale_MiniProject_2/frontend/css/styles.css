@@ -1,0 +1,97 @@
+body {
+  background-color: #f5f7fb;
+}
+
+.main-container {
+  padding-top: 76px;
+  padding-bottom: 24px;
+}
+
+.card {
+  border-radius: 0.75rem;
+}
+
+.card-hover {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.75rem 1.5rem rgba(15, 23, 42, 0.12);
+}
+
+.badge-status-active {
+  background-color: #16a34a;
+}
+
+.badge-status-inactive {
+  background-color: #6b7280;
+}
+
+.badge-dept-engineering {
+  background-color: #2563eb;
+}
+
+.badge-dept-marketing {
+  background-color: #f97316;
+}
+
+.badge-dept-hr {
+  background-color: #6366f1;
+}
+
+.badge-dept-finance {
+  background-color: #059669;
+}
+
+.badge-dept-operations {
+  background-color: #0d9488;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+#departmentBreakdownContainer .dept-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+#departmentBreakdownContainer .dept-bar {
+  flex: 1;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #3b82f6, #38bdf8);
+}
+
+#recentEmployeesContainer .recent-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#recentEmployeesContainer .recent-item:last-child {
+  border-bottom: none;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+#paginationContainer .page-link {
+  min-width: 2.5rem;
+  text-align: center;
+}
+
+#viewerNotice {
+  border-left: 4px solid #f59e0b;
+}
+
