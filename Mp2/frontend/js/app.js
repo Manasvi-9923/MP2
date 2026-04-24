@@ -249,7 +249,8 @@
         uiService.hideModal("#deleteConfirmModal");
         uiService.showToast("Employee deleted.", "success");
         state.deleteId = null;
-        if (state.page > 1) {
+        var currentRows = $("#employeesTableBody tr").length;
+        if (state.page > 1 && currentRows === 1) {
           state.page = 1;
         }
         await refreshAll();
